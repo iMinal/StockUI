@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<!-- Include AngularJS from Google's CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
+		<style>
+         table, th , td {
+            border: 1px solid grey;
+            border-collapse: collapse;
+			padding: 5px;
+         }
+         
+         table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+         }
+         
+         table tr:nth-child(even) {
+            background-color: #ffffff;
+         }
+      </style>
+
+	<head>
+		<meta charset="utf-8"/>
+	
+
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+
+		<!-- The main CSS file -->
+		<link href="style.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+		
+		/* Full-width input fields */
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+		
+		/* Set a style for all buttons */
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		
+		button:hover {
+			opacity: 0.8;
+		}
+		
+		/* Extra styles for the cancel button */
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+		
+		/* Center the image and position the close button */
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+		
+		img.avatar {
+			width: 20%;
+			border-radius: 25%;
+		}
+		
+		.container {
+			padding: 16px;
+		}
+		
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+		
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			padding-top: 60px;
+		}
+		
+		/* Modal Content/Box */
+		.modal-content {
+			background-color: #fefefe;
+			margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+			border: 1px solid #888;
+			width: 40%; /* Could be more or less, depending on screen size */
+		}
+		
+		/* The Close Button (x) */
+		.close {
+			position: absolute;
+			right: 25px;
+			top: 0;
+			color: #000;
+			font-size: 35px;
+			font-weight: bold;
+		}
+		
+		.close:hover,
+		.close:focus {
+			color: red;
+			cursor: pointer;
+		}
+		
+		/* Add Zoom Animation */
+		.animate {
+			-webkit-animation: animatezoom 0.6s;
+			animation: animatezoom 0.6s
+		}
+		
+		@-webkit-keyframes animatezoom {
+			from {-webkit-transform: scale(0)} 
+			to {-webkit-transform: scale(1)}
+		}
+			
+		@keyframes animatezoom {
+			from {transform: scale(0)} 
+			to {transform: scale(1)}
+		}
+		
+		/* Change styles for span and cancel button on extra small screens */
+		@media screen and (max-width: 300px) {
+			span.psw {
+			   display: block;
+			   float: none;
+			}
+			.cancelbtn {
+			   width: 100%;
+			}
+		}
+		</style>
+	</head>
+
+	<!-- The ng-app directive tells angular that the code below should be evaluated -->
+
+	<body ng-app>
+
+			<h1>Stock Recommender</h1>
+
+		<!-- The navigation menu will get the value of the "active" variable as a class.
+			 The $event.preventDefault() stops the page from jumping when a link is clicked. -->
+			 
+			 <!--login -->
+
+<script language="JavaScript">
+<!--
+function formSubmitter(formTag, messageTag){
+  document.getElementById(messageTag).innerHTML = "The form has been updated.";
+  document.forms[formTag].submit();
+}
+// -->
+</script>
+
+			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-left:70%">Login</button>
+				
+				<div id="id01" class="modal">
+				  
+				  <form class="modal-content animate" action="">
+					<div class="imgcontainer">
+					  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					  <img src="login.gif" alt="Avatar" class="avatar">
+					</div>
+				
+					<div class="container">
+					  <label for="uname"><b>Username</b></label>
+					  <input type="text" placeholder="Enter Username" name="uname" required>
+				
+					  <label for="psw"><b>Password</b></label>
+					  <input type="password" placeholder="Enter Password" name="psw" required>
+						
+					  <button type="submit" onclick="">Login</button>
+					  <label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					  </label>
+					</div>
+				
+					<div class="container" style="background-color:#f1f1f1">
+					  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					  <span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+
+				  </form>
+				</div>
+				<button onclick="" style="width:auto">Save</button>
+				
+				<script>
+				
+				</script>
+
+
+
+
+		<nav class="{{active}}" ng-click="$event.preventDefault()">
+
+			<!-- When a link in the menu is clicked, we set the active variable -->
+
+			<a href="#" class="automotive" ng-click="active='automotive'">Automotive</a>
+			<a href="#" class="healthcare" ng-click="active='healthcare'">Health Care</a>
+			<a href="#" class="finance" ng-click="active='finance'">Finance</a>
+			<a href="#" class="chemical" ng-click="active='chemical'">Chemical</a>
+			<a href="#" class="telecom" ng-click="active='telecommunication'">Telecommunication</a>
+		</nav>
+
+		<!-- ng-show will show an element if the value in the quotes is truthful,
+			 while ng-hide does the opposite. Because the active variable is not set
+			 initially, this will cause the first paragraph to be visible. -->
+
+
+		<p ng-show="active">You chose <b>{{active}}</b></p>
+
+
+
+		<h2>  Top 5 Companies  </h2> <br><br>
+
+		
+		<div ng-app = "mainApp" ng-controller = "companyController">
+			<table border = "0" style="width:100%; height:40%; margin:1%;">
+				<tr>
+					<td style="width: 7%">Sr. No.</td>
+					<td>Company Name</td>
+					<td>Open</td>
+					<td>High</td>
+					<td>Low</td>
+					<td>Last</td>
+					<td>Close</td>
+			  	</tr>
+			  	<tr style="width: 100%;height:35px">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			 	</tr>
+			  	<tr style="width: 100%;height:35px">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			  	</tr>
+			  	<tr style="width: 100%;height:35px">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			  	</tr>
+			  	<tr style="width: 100%;height:35px">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			  	</tr>
+			  	<tr style="width: 100%;height:35px">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			  	</tr>
+			</table>
+		   
+		</div>
+
+	</body>
+</html>
